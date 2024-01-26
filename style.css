@@ -5,7 +5,7 @@ html {
 *{ margin: 0;}
 
 body {
-    background: #ffffff;
+    background: #f7f5f5;
     font-family: Inter sans-serif;
     font-size: 16px;
     font-weight: 400;
@@ -76,19 +76,114 @@ h2 {
     margin-top: 52px;
 }
 
+.animated-text{
+    font-size: 34px;
+    font-weight: 600;
+    min-width: 280px;
+    margin: -15px 0 25px 0;
+}
 
-#contact-button {
-    width: 138px;
-    height: 44px;
-    border-radius: 4px;
-    background-color: #002d38;
-    font-family: Inter;
-    font-size: 16px;
-    font-weight: 500;
-    line-height: 19px;
-    color: white;
-    margin-top: 20px;
-    border: none;
+.animated-text span{
+    position: relative;
+}
+
+.animated-text span::before{
+    content: "Youtuber";
+    color: #ff014f;
+    animation: words 20s infinite;
+}
+
+.animated-text span::after{
+    content: "";
+    position: absolute;
+    width: calc(100% + 8px);
+    height: 100%;
+    background-color: #f7f5f5;
+    border-left: 2px solid #ff014f;
+    right: -4px;
+    top: 0px;
+    animation: cursor .8s infinite, typing 20s steps(14) infinite;
+}
+
+@keyframes cursor {
+    to{
+        border-left: 2px solid #ff7f5000;
+    }
+}
+
+@keyframes words {
+    0%,20%{
+        content: "Software Engineering Undergraduate";
+    }
+    21%,40%{
+        content: "Wordpress Developer";
+    }
+    41%,60%{
+        content: "Digital Marketer";
+    }
+    61%,80%{
+        content: "Designer";
+    }
+    81%,100%{
+        content: "Youtuber";
+    }
+}
+
+@keyframes typing {
+    10%,15%,30%,35%,50%,55%,70%,75%,90%,95%{
+        width: 0;
+    }
+    5%,20%,25%,40%,45%,60%,65%,80%,85%{
+        width: calc(100% + 8px);
+    }
+}
+
+.wrapper .button{
+    display: inline-block;
+    height: 60px;
+    width: 60px;
+    float: left;
+    margin: 0 5px;
+    overflow: hidden;
+    background-color: red;
+    border-radius: 50%;
+    cursor: pointer;
+    box-shadow: 0px 10px 10px rgba(0,0,0,0.1);
+    transition: all 0.3s ease-in-out;
+}
+
+.wrapper .button:hover{
+    width: 200px;
+}
+
+.wrapper .button .icon{
+    display: inline-block;
+    height: 60px;
+    width: 60px;
+    text-align: center;
+    border-radius: 50px;
+    box-sizing: border-box;
+    line-height: 60px;
+    transition: all 0.3s ease-in-out;
+}
+
+.wrapper .button:nth-child(1){
+    hover.icon{background: rebeccapurple;}
+}
+.wrapper .button:nth-child(2){
+    hover.icon{background: rebeccapurple;}
+}
+.wrapper .button:nth-child(3){
+    hover.icon{background: rebeccapurple;}
+}
+.wrapper .button:nth-child(4){
+    hover.icon{background: rebeccapurple;}
+}
+
+.wrapper .button .icon i{
+    font-size: 25px;
+    line-height: 60px;
+    transition: all 0.3s ease-out;
 }
 
 #pricing-section {
