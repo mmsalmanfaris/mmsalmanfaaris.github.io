@@ -132,7 +132,7 @@ h2 {
     width: calc(100% + 8px);
     height: 100%;
     background-color: #ffffff;
-    border-left: 2px solid rgb(255, 174, 0);
+    border-left: 2px solid (255, 174, 0)rgb;
     right: -4px;
     top: 0px;
     animation: cursor .8s infinite, typing 20s steps(14) infinite;
@@ -280,6 +280,10 @@ h2 {
     width: 25%;
 }
 
+.price-box3{
+    width: 26%;
+}
+
 .pricing-card {
     background-color: #ffffff;
     border-radius: 15px;
@@ -291,8 +295,7 @@ h2 {
 }
 
 .service-icon{
-    width: 45px;
-    height: 45px;
+    width: 40px;
     margin-bottom: 07px
 }
 
