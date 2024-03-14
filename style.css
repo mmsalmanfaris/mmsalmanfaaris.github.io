@@ -278,10 +278,12 @@ h2 {
 
 .price-box {
     width: 25%;
+    text-align: justify;
 }
 
 .price-box3{
     width: 26%;
+    text-align: justify;
 }
 
 .pricing-card {
