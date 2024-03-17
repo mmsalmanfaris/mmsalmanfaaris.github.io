@@ -30,7 +30,7 @@ body {
     align-items: center;
     justify-content: center;
     background: #002d38;
-    transition: opacity 5s, visibility 1s;
+    transition: opacity 3s, visibility 1s;
   }
   
   .loader--hidden {
@@ -358,6 +358,45 @@ h2 {
     font-weight: 400;
     line-height: 21px;
     margin-top: 8px;
+}
+
+/* Education */
+
+.education{
+    position: relative;
+    max-width: 1300px;
+    margin: 100px auto;
+}
+
+.container{
+    padding: 10px 50px;
+    position: relative;
+    width: 50%;
+    background-color: #f3f3f3;
+}
+
+.text-box{
+    padding: 20px 30px;
+    background: #fff;
+    position: relative;
+    border-radius: 10px;
+}
+
+.left-container{
+    left: 0;
+}
+
+.right-container{
+    left: 50%;
+}
+
+.container img{
+    position: absolute;
+    width: 60px;
+    border-radius: 50%;
+    right: -20px;
+    top: 32px;
+    z-index: 10;
 }
 
 
