@@ -18,6 +18,46 @@ body {
     padding: 0;
 }
 
+/* Pre Loader */
+.loader {
+    z-index: 1;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #002d38;
+    transition: opacity 5s, visibility 1s;
+  }
+  
+  .loader--hidden {
+    opacity: 0;
+    visibility: hidden;
+  }
+  
+  .loader::after {
+    content: "";
+    width: 75px; 
+    height: 75px;
+    border: 15px solid #dddddd;
+    border-top-color: #ffae00;
+    border-radius: 50%;
+    animation: loading 0.75s ease infinite;
+  }
+  
+  @keyframes loading {
+    from {
+      transform: rotate(0turn);
+    }
+    to {
+      transform: rotate(1turn);
+    }
+  }
+  
+
 .header{
     position: fixed;
     width: 100%;
@@ -28,7 +68,7 @@ body {
     backdrop-filter:blur(100px);
     display: flex;
     justify-content: space-between;
-    z-index: 100;
+    z-index: 2;
 }
 
 .logo{
