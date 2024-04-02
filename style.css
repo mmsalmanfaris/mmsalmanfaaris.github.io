@@ -8,7 +8,7 @@ html {
 }
 
 body {
-    background: #dbdbdb;
+    background: #f8fcff;
     font-family: Inter sans-serif;
     font-size: 16px;
     font-weight: 400;
@@ -327,9 +327,9 @@ h2 {
 }
 
 .pricing-card {
-    background-color: #ffffff;
+    background: linear-gradient(320deg, #f8fcff 0%, #ebf0f3 100%);
     border-radius: 15px;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 5px 25px 0 rgba(0, 0, 0, 0.1);
+    box-shadow: 7px 7px 14.5px -3px #dddddd;
     margin: 0 10px;
     padding: 20px;
 
@@ -360,9 +360,9 @@ h2 {
     margin-top: 8px;
 }
 
-/* Education */
+/* education-experience */
 
-.education{
+.education-experience{
     position: relative;
     max-width: 1300px;
     margin: 100px auto;
@@ -371,14 +371,13 @@ h2 {
 .container{
     padding: 10px 50px;
     position: relative;
-    width: 50%;
     animation: movedown 1s linear forwards;
     opacity: 0;
 }
 
 .container small{
     background-color: #ffae00;
-    border-radius: 05px;
+    border-radius: 03px;
     padding: 2px 12px 0 12px;
     color: #ffffff;
     font-weight: 500;
@@ -413,45 +412,36 @@ h2 {
 
 .text-box{
     padding: 20px 30px;
-    background: #ffffff;
-    position: relative;
+    background: linear-gradient(320deg, #f8fcff 0%, #ebf0f3 100%);
+    border-radius: 10px;
+    box-shadow: 7px 7px 14.5px -3px #dddddd;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.edu-container{
+    left: 0;
+    width: 75%;
+}
+
+.img-section img{
+    width: 175px;
+    margin: 10px 35px 0 0;
     border-radius: 10px;
 }
 
-.left-container{
-    left: 0;
-    width: 42.3%;
-}
 
-.right-container{
-    left: 50%;
-    width: 43%;
-}
-
-.container img{
-    position: absolute;
-    width: 50px;
-    border-radius: 50%;
-    right: -25px;
-    top: 25px;
-    z-index: 10;
-}
-
-.right-container img{
-    left: -26px;
-}
-
-.education::after{
+.education-experience::after{
     content: '';
     position: absolute;
     width: 6px;
     height: 100%;
     background: #002d38;
     top: 0;
-    left: 50%;
     margin-left: -3px;
     z-index: -1;
-    animation: moveline 5s linear forwards; */
+    animation: moveline 5s linear forwards; 
 }
 @keyframes moveline {
     0%{
@@ -468,10 +458,22 @@ h2 {
 
 .text-box small{
     display: inline-block;
-    margin-bottom: 05px;
+    margin: 05px 0 12px 0;
+}
+    
+.edu-container-arrow{
+    height: 0;
+    width: 0;
+    position: absolute;
+    top: 28px;
+    z-index: 1;
+    border-top: 15px solid transparent;
+    border-bottom: 15px solid transparent;
+    border-right: 15px solid #ebf0f3;
+    left: 36px;
 }
 
-.left-container-arrow{
+.exp-container-arrow{
     height: 0;
     width: 0;
     position: absolute;
@@ -482,18 +484,7 @@ h2 {
     border-left: 15px solid rgb(255, 255, 255);
     right: -14.5px;
 }
-    
-.right-container-arrow{
-    height: 0;
-    width: 0;
-    position: absolute;
-    top: 28px;
-    z-index: 1;
-    border-top: 15px solid transparent;
-    border-bottom: 15px solid transparent;
-    border-right: 15px solid rgb(255, 254, 254);
-    left: -14.5px;
-}
+
 
 
 #footer {
@@ -532,13 +523,13 @@ h2 {
     .text-box small{
         margin-bottom: 10px;
     }
-    .right-container{
+    .edu-container{
         left: 0;
     }
-    .left-container img, .right-container img{
+    .left-container img, .edu-container img{
         left: 7px;
     }
-    .left-container-arrow, .right-container-arrow{
+    .left-container-arrow, .edu-container-arrow{
         border-right: 15px solid #ffffff;
         border-left: 0;
         left: -14px;
