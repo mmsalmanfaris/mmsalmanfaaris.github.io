@@ -302,6 +302,13 @@ h2 {
 .pricing-card {
     background: #ffffff;
     border-radius: 15px;
+    box-shadow: 0px 0px 30px 0px #efededcb;
+    padding: 20px;
+}
+
+.pricing-card:hover {
+    background: #ffffff;
+    border-radius: 15px;
     box-shadow: 0px 0px 30px 0px #e7e3e3cb;
     padding: 20px;
 }
