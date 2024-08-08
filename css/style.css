@@ -13,7 +13,7 @@ body {
 }
 body.dark-theme {
     --text-color: #ffffff;
-    --bkg-color: #202124;
+    --bkg-color: #222222;
     --card-color: #28292A;
   }
   
