@@ -16,8 +16,8 @@ jobs:
       - name: Set up Node.js
         uses: actions/setup-node@v3
         with:
-          node-version: 18
-          cache: 'npm' # Cache npm dependencies to speed up future builds
+          node-version: 21.7.1
+          cache: 'npm'
 
       - name: Install dependencies
         run: npm install
@@ -27,7 +27,7 @@ jobs:
 
       - name: Validate build folder
         run: |
-          if [ ! -d "build" ]; then
+          if [ ! -d "dist" ]; then
             echo "Build folder not found! Build process failed."
             exit 1
           fi
