@@ -20,10 +20,16 @@ jobs:
           cache: 'npm'
 
       - name: Install dependencies
-        run: npm install
+        run: npm install --force
+
+      - name: Install Vite globally
+        run: npm install -g vite
+
+      # - name: Fix Vite Permissions
+      #   run: chmod +x node_modules/.bin/vite
 
       - name: Build React app
-        run: npm run build
+        run: npx vite build
 
       - name: Validate build folder
         run: |
