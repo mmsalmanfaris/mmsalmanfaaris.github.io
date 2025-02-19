@@ -25,9 +25,6 @@ jobs:
       - name: Install Vite globally
         run: npm install -g vite
 
-      # - name: Fix Vite Permissions
-      #   run: chmod +x node_modules/.bin/vite
-
       - name: Build React app
         run: npx vite build
 
@@ -44,6 +41,5 @@ jobs:
           server: ${{ secrets.FTP_SERVER }}
           username: ${{ secrets.FTP_USERNAME }}
           password: ${{ secrets.FTP_PASSWORD }}
-          source: "dist/*"
-          strip_components: 1
-          overwrite: true
+          local-dir: dist/
+          server-dir: mmsalmanfaris.engineer/
