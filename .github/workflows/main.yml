@@ -43,8 +43,4 @@ jobs:
           password: ${{ secrets.FTP_PASSWORD }}
           local-dir: dist/
           exclude: |
-            **/.git*
-            **/.git*/**
-            **/node_modules/**
-            **/package-lock.json**
-            **/.vite/**
+            **/*
